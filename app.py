@@ -65,19 +65,19 @@ x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.25,random_state
 
 #### Feature engineering
 
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+#from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
-label = LabelEncoder()
+#label = LabelEncoder()
 
 print(titanic['class'])
 
-x['class_label'] = label.fit_transform(titanic['class'])
+#x['class_label'] = label.fit_transform(titanic['class'])
 
 # x.head()
 
-onehot = OneHotEncoder()
+#onehot = OneHotEncoder()
 
-onehot.fit_transform(titanic[[  'sex'  ]])
+#onehot.fit_transform(titanic[[  'sex'  ]])
 
 pd.get_dummies(titanic[['sex', 'embarked', 'embark_town']])
 
